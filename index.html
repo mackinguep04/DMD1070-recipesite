@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fqq7qtz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fqq7qtz.css">
+    <title>Cameroonian Jollof Rice</title>
+</head>
+<body>
+    <header>
+<h1>Cameroonian Jollof Rice</h1>
+    <div id="arrow">
+        <a href="#section1"><img src="images/arrow-down.svg" alt="arrow-down">
+        </a>
+    </div>
+</header>
+<div class="border">
+    <div class="box">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ingredients.html">Ingredients</a>
+            <a href="recipe.html">Recipe</a>
+        </nav>
+    </div>
+</div>
+<main>
+    <section>
+      <div id="section1">
+        <div class="item">
+            <div class="slideshowcontainer">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/Rectangle25.png" alt="main-slideshow1"/>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/jollof-rice-map.png" alt="main-slideshow2"/>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/jollof-rice1.png" alt="main-slideshow3">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                </div>
+            </div>
+            <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        <div class="item">
+            <h2>Exploring the Vibrant Flavors of Cameroonian Jollof Rice</h2>
+            <hr>
+        <p>The colorful and aromatic dish known as Cameroonian Jollof Rice is made with long-grain parboiled rice and cooked in a delicious sauce with a tomato base. A mixture of spices, including curry powder, paprika, thyme, and cayenne pepper, are added to the rice. The dish gains its rich color and deep flavor from a mixture of tomato paste, fresh tomatoes, and aromatic seasonings. Simmered in a savory broth, the rice absorbs the savory essence of the sauce, resulting in a delightful one-pot meal.
+        </p>
+    </div>
+      </div>
+  </section>
+    <section>
+        <div class="item">
+            <hr>
+            <hr>
+            <h2>History of the Dish</h2>
+            <hr width="70%">
+            <p>The history of Cameroonian Jollof Rice is intertwined with the broader history of Jollof Rice itself, a dish that has become a culinary icon in West Africa. Jollof Rice is believed to have originated among the Wolof people in Senegal, and its name is derived from the Wolof word "Benachin," which means "one-pot" or "togetherness." In Cameroon, the history of Jollof Rice can be traced back to the influence of neighboring West African countries, such as Nigeria and Ghana, and their own unique culinary traditions.
+            </p>
+        </div>
+        <div class="item">
+            <img src="images/image2.png" alt="main-image2">
+        </div>
+      </section>
+</main>
+<div class="border">
+  <div class="box">
+  <footer>
+<p>Pamela Mackingue</p>
+<p>DMD 1070 - Web Design I</p>
+  </footer>
+</div>
+</div>
+
+</body>
+</html>
